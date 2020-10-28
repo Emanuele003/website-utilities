@@ -1,0 +1,122 @@
+body
+{
+    background: linear-gradient(to top right, #1d1c35, #1d263b);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Trebuchet MS';
+}
+
+body, html
+{
+    height: 100%;
+}
+
+.form_mod
+{
+    border: 2px solid;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+    padding-bottom: 0px;
+
+    background: linear-gradient(to top right, #5c6784, #a0eade); 
+}
+
+form h2
+{
+    text-transform: uppercase;
+}
+
+::placeholder
+{
+    color: black;
+    opacity: 0.5;
+}
+
+form input[type = "text"], [type = "password"]
+{
+    background: #4cb963;
+
+    color: black;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+    border: 1px solid;
+    border-color: linear-gradient(to top right, #5c6784, #a0eade);
+    border-radius: 20px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding: 7px 15px;
+
+    font-size: 17px;
+    font-family: 'Trebuchet MS';
+
+    text-align: center;
+}
+
+form input[type = "submit"]
+{
+    background: linear-gradient(to top right, #5c6784, #a0eade);
+    border: 1px solid #1d1c35;
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 6px 15px;
+
+    margin-bottom: 20px;
+}
+
+form input[type = "password"]
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form input[type = "text"]:focus, [type = "password"]:focus, [type = "submit"]:focus
+{
+    outline: none;
+}
+
+form input[type = "submit"]:hover
+{
+    background: linear-gradient(to top right, #5c6784, black);
+    color: #a0eade;
+    cursor: pointer;
+}
+
+.dimenticata
+{
+    align-self: flex-start;
+
+    margin-bottom: 0;
+    margin-left: 22px;
+
+    font-size: 12px;
+}
+
+form a
+{
+    text-decoration: none;
+    color: #04460f;
+}
+
+.credits
+{
+    margin-top: 25px;
+    margin-bottom: 3px;
+
+    font-size: 12px;
+}
